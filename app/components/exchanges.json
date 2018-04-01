@@ -1,0 +1,138 @@
+{
+  "Binance": {
+    "chart": true,
+    "pairs": [
+      "ETH-USDT",
+      "ETH-BTC",
+      "TRX-ETH",
+      "LEND-ETH",
+      "ETC-ETH",
+      "ICX-ETH",
+      "ADA-ETH",
+      "NEO-ETH",
+      "EOS-ETH",
+      "VEN-ETH",
+      "NCASH-ETH",
+      "IOTA-ETH",
+      "XRP-ETH",
+      "NANO-ETH",
+      "FUEL-ETH",
+      "XVG-ETH",
+      "ONT-ETH",
+      "XLM-ETH",
+      "WAN-ETH",
+      "ZIL-ETH",
+      "STORM-ETH",
+      "AION-ETH",
+      "OMG-ETH",
+      "BNB-ETH",
+      "QTUM-ETH",
+      "POA-ETH",
+      "XMR-ETH",
+      "LSK-ETH",
+      "DGD-ETH",
+      "VIBE-ETH",
+      "BQX-ETH",
+      "WTC-ETH",
+      "ZRX-ETH",
+      "POE-ETH",
+      "LTC-ETH",
+      "ELF-ETH",
+      "WAVES-ETH",
+      "DASH-ETH",
+      "BLZ-ETH",
+      "AST-ETH",
+      "GTO-ETH",
+      "NEBL-ETH",
+      "XEM-ETH",
+      "SNT-ETH",
+      "ZEC-ETH",
+      "STRAT-ETH"
+    ]
+  },
+  "Bittrex": {
+    "chart": true,
+    "pairs": [
+      "ETH-BTC",
+      "ETH-USDT",
+      "ADA-ETH",
+      "ETC-ETH",
+      "XRP-ETH",
+      "XLM-ETH",
+      "NEO-ETH",
+      "OMG-ETH",
+      "SC-ETH",
+      "LTC-ETH",
+      "XMR-ETH",
+      "QTUM-ETH",
+      "DASH-ETH",
+      "STRAT-ETH",
+      "ZEC-ETH",
+      "SALT-ETH",
+      "WAVES-ETH",
+      "ADX-ETH",
+      "GNT-ETH",
+      "MCO-ETH",
+      "ENG-ETH",
+      "BCC-ETH",
+      "CVC-ETH",
+      "DGB-ETH",
+      "POWR-ETH",
+      "ANT-ETH",
+      "XEM-ETH",
+      "BNT-ETH",
+      "STORJ-ETH",
+      "LUN-ETH",
+      "VIB-ETH",
+      "REP-ETH",
+      "TRX-ETH",
+      "PAY-ETH",
+      "DNT-ETH",
+      "GUP-ETH",
+      "HMQ-ETH",
+      "GNO-ETH",
+      "BTG-ETH",
+      "SRN-ETH",
+      "ADT-ETH",
+      "VEE-ETH",
+      "CFI-ETH",
+      "RLC-ETH",
+      "TRST-ETH",
+      "FCT-ETH",
+      "WINGS-ETH"
+    ]
+  },
+  "Kraken": {
+    "chart": true,
+    "pairs": [
+      "ETH-EUR",
+      "ETH-USD",
+      "ETH-XBT",
+      "ETH-GBP",
+      "ETH-JPY",
+      "ETH-CAD"
+    ]
+  },
+  "Coinbase": {
+    "chart": true,
+    "pairs": [
+      "ETH-USD",
+      "ETH-EUR",
+      "ETH-BTC"
+    ]
+  },
+  "Upbit": {
+    "chart": false,
+    "pairs": [
+      "KRW-ETH",
+      "BTC-ETH"
+    ]
+  },
+  "HitBTC": {
+    "chart": false,
+    "pairs": [
+      "ETH-USD",
+      "ETH-BTC"
+    ]
+  }
+}

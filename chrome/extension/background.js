@@ -33,6 +33,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 function ticker(exchangeService, pair) {
   getApi(exchangeService, pair)
     .then(rate => {
+      console.log(rate)
       const message = {
         message: 'update',
         exchangeService,

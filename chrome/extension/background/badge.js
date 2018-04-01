@@ -11,11 +11,11 @@ function sliceTextTo4(str) {
 
 export default function badge(pair, rate, up) {
   const color = up ? '#080' : '#c45c50'
-  const re = new RegExp('KRW|USD')
+  const re = new RegExp('KRW|USD|EUR|JPY|CAD|GBP')
   let rateText = ''
 
   if (re.test(pair)) {
-    rateText = sliceTextTo4(rate.toString())
+    rateText = sliceTextTo4(Math.round(rate).toString())
   } else {
     rateText = sliceTextTo4(convertToSatoshi(rate))
   }

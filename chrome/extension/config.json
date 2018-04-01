@@ -1,7 +1,7 @@
 {
   "theme": "Light",
-  "exchangeService": "Bittrex",
+  "exchangeService": "Binance",
   "updateDelay": "30",
   "chart": "true",
-  "pair": "ADA-BTC"
+  "pair": "ETH-USDT"
 }

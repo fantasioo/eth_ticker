@@ -2,39 +2,7 @@ import React, { Component } from 'react'
 import { saveState } from '../utils/storage'
 import Beer from './Beer'
 
-const exchanges =
-  {
-    Binance: {
-      chart: true,
-      pairs: [
-        'ADA-BTC',
-        'ADA-ETH'
-      ]
-    },
-    Bittrex: {
-      chart: true,
-      pairs: [
-        'ADA-BTC',
-        'ADA-ETH',
-        'ADA-USDT'
-      ]
-    },
-    Upbit: {
-      chart: false,
-      pairs: [
-        'KRW-ADA',
-        'BTC-ADA',
-      ]
-    },
-    HitBTC: {
-      chart: false,
-      pairs: [
-        'ADA-BTC',
-        'ADA-ETH',
-        'ADA-USD'
-      ]
-    }
-  }
+const exchanges = require('./exchanges.json')
 
 class OptionsForm extends Component {
   constructor(props) {

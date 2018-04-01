@@ -13,6 +13,16 @@ function binanceTicker(market) {
     .then(json => json.price)
 }
 
+function krakenTicker(market) {
+  return fetch(`https://api.kraken.com/0/public/Ticker?pair=${cleanMin(market)}`)
+    .then(res => res.json())
+    .then(json => {
+      const res = json.result
+      const key = Object.keys(res)[0]
+      return res[key].a[0]
+    })
+}
+
 function bittrexTicker(market) {
   return fetch('https://bittrex.com/api/v1.1/public/getticker', {
     body: JSON.stringify({market: inverse(market)}),
@@ -23,7 +33,7 @@ function bittrexTicker(market) {
   })
     .then(res => res.json())
     .then(json => {
-      if (json.result.Ask > 1) {
+      if (json.result.Ask > 6000) {
         // bittrexTicker api give weird result sometime so we redo the call
         return bittrexTicker(market)
       }
@@ -43,11 +53,22 @@ function hitbtcTicker(market) {
     .then(json => json.ask)
 }
 
+function coinbaseTicker(market) {
+  return fetch(`https://api.coinbase.com/v2/exchange-rates?currency=ETH`)
+    .then(res => res.json())
+    .then(json => {
+      const key = market.split('-')[1]
+      return json.data.rates[key]
+    })
+}
+
 const pointerFunction = {
+  Kraken: krakenTicker,
   Binance: binanceTicker,
   Bittrex: bittrexTicker,
   Upbit: upbitTicker,
-  HitBTC: hitbtcTicker
+  HitBTC: hitbtcTicker,
+  Coinbase: coinbaseTicker
 }
 
 export default function getApi(exchange, market) {

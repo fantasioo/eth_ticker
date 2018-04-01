@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "ADA ticker | Cardano ticker",
+  "name": "ETH ticker | Ethereum ticker",
   "manifest_version": 2,
-  "description": "Cardano exchange price ticker. Displays the current price on the badge icon. bittrex, binance, upbit, hitbtc pairs available",
+  "description": "Ethereum exchange price ticker. Displays the current price on the badge icon. bittrex, binance, upbit, hitbtc pairs available",
   "browser_action": {
-    "default_title": "Cardano ticker | Ada ticker",
+    "default_title": "Ethereum ticker | ETH ticker",
     "default_popup": "popup.html"
   },
   "icons": {
@@ -16,6 +16,6 @@
     "page": "background.html"
   },
   "options_page": "options.html",
-  "permissions": ["storage", "https://bittrex.com/*", "https://*.binance.com/*", "https://*.upbit.com/*", "https://*.hitbtc.com/*"],
-  "content_security_policy": "default-src 'self'; script-src 'self' https://s3.tradingview.com 'unsafe-eval'; connect-src https://bittrex.com https://api.binance.com https://crix-api-endpoint.upbit.com https://api.hitbtc.com; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:; frame-src https://s.tradingview.com"
+  "permissions": ["storage", "https://bittrex.com/*", "https://*.binance.com/*", "https://*.upbit.com/*", "https://*.hitbtc.com/*", "https://*.kraken.com/*", "https://*.coinbase.com/*"],
+  "content_security_policy": "default-src 'self'; script-src 'self' https://s3.tradingview.com 'unsafe-eval'; connect-src https://bittrex.com https://api.binance.com https://crix-api-endpoint.upbit.com https://api.hitbtc.com https://api.kraken.com https://api.coinbase.com; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:; frame-src https://s.tradingview.com"
 }
