@@ -5,7 +5,7 @@ class Popup extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {exchangeService: 'exchange', pair: 'ADA-BTC', rate: 0}
+    this.state = {exchangeService: 'exchange', pair: 'ETH-USDT', rate: 0}
     this.handleClose = this.handleClose.bind(this)
   }
 
