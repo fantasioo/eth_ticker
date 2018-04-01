@@ -1,4 +1,4 @@
-# Cardano ticker
+# ETH ticker
 I start the project using this nice [boilerplate](https://github.com/jhen0409/react-chrome-extension-boilerplate)
 
 ## How to dev ?
