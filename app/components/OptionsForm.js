@@ -46,7 +46,7 @@ class OptionsForm extends Component {
       <div className="container">
         <div>
           <h1 className="title">
-            ADA Ticker - Options
+            ETH Ticker - Options
           </h1>
 
           <form onSubmit={this.handleSubmit}>
